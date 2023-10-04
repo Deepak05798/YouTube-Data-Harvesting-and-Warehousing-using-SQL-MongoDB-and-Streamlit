@@ -36,9 +36,9 @@ db = client.youtube_data
 
 # Create a connection to the MySQL database
 mydb = mysql.connector.connect(
-    host="127.0.0.1",
-    user="root",
-    password="12345",
+    host="HOST NAME",
+    user="USERNAME",
+    password="USE YOUR PASSWORD",
     database="youtube"
 )
 
@@ -48,7 +48,7 @@ mycursor = mydb.cursor()
 
 
 # BUILDING CONNECTION WITH YOUTUBE API
-api_key = "AIzaSyBFVVpgll2VAHn8TsbomgGLS62CUNTyNko"
+api_key = "API KEY"
 youtube = build('youtube','v3',developerKey=api_key)
 
 logging.basicConfig(level=logging.INFO) 
