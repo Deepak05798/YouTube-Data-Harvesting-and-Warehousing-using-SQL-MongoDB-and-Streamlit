@@ -16,3 +16,5 @@ Query the SQL data warehouse: SQL queries can be used to join the tables in the 
 Display data in the Streamlit app: Finally,the retrieved data was displayed in the Streamlit app. You can use Streamlit's data visualization features to create charts and graphs to help users analyze the data.
 
 Summary: Overall, this approach involves building a simple UI with Streamlit, retrieving data from the YouTube API, storing it in a MongoDB data lake, migrating it to a SQL data warehouse, querying the data warehouse with SQL, and displaying the data in the Streamlit app.
+
+DEMO VIDEO LINK : https://www.linkedin.com/posts/deepak-harikrishnan-474a82264_hi-everyone-im-h-deepak-im-happy-to-share-activity-7116438218870292480-ED_b?utm_source=share&utm_medium=member_desktop
