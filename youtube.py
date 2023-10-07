@@ -6,7 +6,7 @@ import mysql.connector
 import pymongo
 from googleapiclient.discovery import build
 from datetime import datetime
-import logging
+import logging   # using logging its shows the exact error
 
 
 # SETTING PAGE CONFIGURATIONS
@@ -29,14 +29,14 @@ with st.sidebar:
                                    "nav-link-selected": {"background-color": "#27A40A"}})
 
 # Bridging a connection with MongoDB Atlas and Creating a new database(youtube_data)
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient("MONGODB")
 db = client.youtube_data
 
 # Create a connection to the MySQL database
 mydb = mysql.connector.connect(
-    host="127.0.0.1",
-    user="root",
-    password="12345",
+    host="HOST",
+    user="USERNAME",
+    password="PASSWORD",
     database="youtube"
 )
 
@@ -46,7 +46,7 @@ mycursor = mydb.cursor()
 
 
 # BUILDING CONNECTION WITH YOUTUBE API
-api_key = "AIzaSyDOjK56f76Q-N2gcXvh7u44p-RByRSWZC4"
+api_key = "API KEY"
 youtube = build('youtube','v3',developerKey=api_key)
 
 logging.basicConfig(level=logging.INFO) 
@@ -164,7 +164,7 @@ def get_comments_details(v_id):
 
 
 
-from datetime import datetime
+
 
 # Example input datetime string
 def format_datetime_for_mysql(input_datetime_str):
